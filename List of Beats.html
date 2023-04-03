@@ -1,78 +1,71 @@
 <!DOCTYPE html>
-			<html>
-		<head>
-				<title>List of Beats</title>
-		</head>
-	<body>
-
-		<style>
-body {
-  background-image: url('https://wallpapers.com/images/hd/lost-soul-in-bridge-voq5zpjkkxbpivk9.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-</style>
-		
-  <h1>Welcome to the Beatselling Store!</h1>
-
-    <h2>Featured Beats</h2>
-    <ul>
-      <li>
-        <h3>Beat 1</h3>
-        <p>Description of Beat 1</p>
-        <button>Add to Cart</button>
-      </li>
-      <li>
-        <h3>Beat 2</h3>
-        <p>Description of Beat 2</p>
-        <button>Add to Cart</button>
-      </li>
-      <li>
-        <h3>Beat 3</h3>
-        <p>Description of Beat 3</p>
-        <button>Add to Cart</button>
-      </li>
-    </ul>
-
-    <h2>All Beats</h2>
-    <ul>
-      <li>
-        <h3>Beat 4</h3>
-        <p>Description of Beat 4</p>
-        <button>Add to Cart</button>
-      </li>
-      <li>
-        <h3>Beat 5</h3>
-        <p>Description of Beat 5</p>
-        <button>Add to Cart</button>
-      </li>
-      <li>
-        <h3>Beat 6</h3>
-        <p>Description of Beat 6</p>
-        <button>Add to Cart</button>
-      </li>
-    </ul>
-
-    <h2>Cart</h2>
-    <ul id="cart"></ul>
-
-    <script>
-      const addCartButtons = document.querySelectorAll("button");
-      const cart = document.querySelector("#cart");
-
-      addCartButtons.forEach((button) => {
-        button.addEventListener("click", (event) => {
-          const beatName = event.target.parentNode.querySelector("h3")
-            .innerText;
-          const li = document.createElement("li");
-          li.innerText = beatName;
-          cart.appendChild(li);
-        });
-      });
-    </script>
-
-
-
-	</body>
+<html>
+   <head>
+      <title>Beatstars Website</title>
+      <style>
+         body {
+            background-color: #F6F6F6;
+            font-family: arial;
+            font-size: 16px;
+            line-height: 1.6;
+         }
+         #main-content {
+            width: 960px;
+            margin: 0 auto;
+         }
+         header {
+            background-color: #F6F6F6;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+         }
+         header h1 {
+            font-size: 2em;
+            margin: 0;
+            padding-left: 10px;
+            font-weight: normal;
+            color: #555;
+         }
+         nav {
+            background-color: #555;
+            padding: 5px;
+         }
+         nav ul li {
+            display: inline;
+            margin-right: 10px;
+         }
+         nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+         }
+         .content {
+            padding: 10px;
+         }
+         footer {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+            color: #FFF;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="main-content">
+         <header>
+            <h1>Beatstars Website</h1>
+         </header>
+         <nav>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="content">
+            Content goes here
+         </div>
+         <footer>
+            Copyright 2020
+         </footer>
+      </div>
+   </body>
 </html>
